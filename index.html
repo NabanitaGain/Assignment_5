@@ -3,34 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Board</title>
+    <title>Assignment 5</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class=" bg-slate-100 min-h-screen " >
-    <section class="flex items-center justify-center">
-    <header class=" w-[1200px] h-[100px] mt-[30px] flex items-center bg-white">
-<nav class="bg-white flex ">
-    <div class="flex items-center space-x-2">
-    <img class="w-[50px] h-[50px] rounded-lg "   src="assets/logo.png" alt="">
-    <h1 class="text-4xl w-[160px] h-[50px]"> <span class="text-gray-600 font-medium 
-         items-center">Dev</span><span class="font-bold
-         text-black">Board</span></h1>
+
+
+
+<!--Body of this assignment-->
+
+<body class="  min-h-screen bg-slate-100" >
+    <section class="flex justify-center items-center">
+    <header class="mt-[30px] flex items-center w-[1200px] h-[100px] bg-white">
+
+<!--Nav bar-->
+      <nav class="bg-white flex ">
+    <div class="space-x-2 flex items-center ">
+    <img class="rounded-lg w-[50px] h-[50px]" src="assets/logo.png" alt="">
+    <h1 class="w-[160px] h-[50px] text-4xl"> <span class="font-medium 
+         items-center text-gray-600">Dev</span><span class="text-black font-bold">Board</span></h1>
 </div>
-<div class="flex ml-[780px] ">
+
+
+<div class="ml-[780px] flex">
   
-   <div class="w-[100px] h-[50px] bg-gray-200  rounded-full mt-3 flex"> 
+   <div class="flex rounded-full bg-gray-200  w-[100px] h-[50px] mt-3"> 
    
-    <img class="mt-4 ml-3 w-[20px] h-[20px]" src="assets/checkbox.png" alt="">
-    <span  id="taskCompleted" class="mt-2 ml-3 font-bold text-2xl">25</span>
+    <img class="w-[20px] h-[20px] mt-4 ml-3 " src="assets/checkbox.png" alt="">
+    <span  id="taskCompleted" class="font-bold text-2xl mt-2 ml-3 ">24</span>
   </div>
    
-   <div id="color-change" class="w-[64px] h-[64px] ml-5 mt-4"> <img src="assets/theme-btn.png" alt=""></div>
+   <div id="color-change" class="ml-5 mt-4 w-[64px] h-[64px]"> <img src="assets/theme-btn.png" alt=""></div>
 </div>
 </nav>
+
     </header>
+
 </section>
+
     <main>
+
+
         <div class="box-logs flex ">
        <div class="card-head-cards  mt-3.5  border-blue-600  w-[850px] h-[750px] ml-[160px]
       bg-white">
@@ -41,6 +56,7 @@
             <h4 class="font-medium text-base text-gray-700">Task Assigned <br><span id="taskAssigned" class="font-bold text-xl"> 5</span> </h4>
             </div>
         </div>
+
             <div id="discoNew"  class="discover  rounded-xl ml-5 flex w-[410px] bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]
            items-center  ">
             <img class="w-[40px] h-[40px] ml-5" src="assets/board.png" alt="">
@@ -65,7 +81,10 @@
                 <button class="btn btn-primary" onclick="completeTask(this, 'Fix Mobile Button Issue')">Completed</button>
               </div>
             </div>
-          </div></div>
+          </div>
+        </div>
+
+
         <div class="card-2">
             <div class="card card-dash bg-slate-100 rounded-lg w-[260px] h-[270px]">
             <div class="card-body">
@@ -78,7 +97,10 @@
                 <button class="btn btn-primary" onclick="completeTask(this, 'Add Dark Mode')">Completed</button>
               </div>
             </div>
-          </div></div>
+          </div>
+        </div>
+
+
         <div class="card-3">
             <div class="card card-dash bg-slate-100 rounded-lg w-[260px] h-[270px] ">
             <div class="card-body">
@@ -90,9 +112,12 @@
                 <button class="btn btn-primary" onclick="completeTask(this, 'optimize Home page')">Completed</button>
               </div>
             </div>
-          </div></div>
+          </div>
+        </div>
+
+
         <div class="card-4">
-            <div class="card card-dash bg-slate-100 rounded-lg w-[260px] h-[270px] mt-8">
+            <div class="card card-dash w-[260px] h-[270px] mt-8 bg-slate-100 rounded-lg">
             <div class="card-body">
                 <h3 class="w-[80px] h-[30px]  ml-2 p-1 b bg-white rounded-lg font-medium">Meta</h3>
               <h2 class="card-title">Add new emoji</h2>
@@ -103,7 +128,10 @@
                 <button class="btn btn-primary" onclick="completeTask(this, 'Add new emoji')">Completed</button>
               </div>
             </div>
-          </div></div>
+          </div>
+        </div>
+
+
         <div class="card-5">
             <div class="card card-dash bg-slate-100 rounded-lg w-[260px] h-[270px] mt-8">
             <div class="card-body">
@@ -115,7 +143,10 @@
                 <button class="btn btn-primary" onclick="completeTask(this, 'OpenAI API')">Completed</button>
               </div>
             </div>
-          </div></div>
+          </div>
+        </div>
+
+
         <div class="card-6">
             <div class="card card-dash bg-slate-100 rounded-lg w-[260px] h-[270px] mt-8">
             <div class="card-body">
@@ -127,7 +158,8 @@
                 <button class="btn btn-primary" onclick=" completeTaskWithDoubleAlert(this,'Improve Job searching') ">Completed</button>
               </div>
             </div>
-          </div></div>
+          </div>
+        </div>
 
 
         
@@ -148,8 +180,12 @@
 
       </div>
     </div>
+
     </main>
+
+    <!--script file link part-->
    <script src="updateDesign.js"></script>
    <script src="code.js"></script>
+
 </body>
 </html>
